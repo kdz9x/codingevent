@@ -1,6 +1,6 @@
 function gettext(){
     var a = ("10,20");
-    let number = a.replace(","," ");
+    let number = a.replace(/\,/g," ");
     let newNumber = number.split(" ");
     const total = () => {
         var sum=0;
