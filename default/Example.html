@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script type="text/javascript">
+        function gettext(){
+            a = document.getElementById("txtName").value;
+            let number = a.replace(",","");
+            console.log(number);
+            total();
+            function total() {
+                var sum=0;
+                for (var i = 0;i<number.length;i++){
+                    sum += Number(number[i]);
+                }
+                document.getElementById("sum").innerHTML = sum;
+                return sum;
+            }
+        }
+</script>
+    </head>
+<body>
+<input type="text" id="txtName" />
+<button onclick="gettext()">Click Here</button>
+<p id="sum"></p>
+
+</body>
+</html>
