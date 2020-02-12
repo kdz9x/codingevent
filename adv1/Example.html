@@ -8,7 +8,7 @@
             let newNumber = number.split(" ")
             console.log(newNumber);
             total();
-            function total() {
+            const total = () => {
                 var sum=0;
                 for (var i = 0;i<newNumber.length;i++){
                     sum += Number(newNumber[i]);

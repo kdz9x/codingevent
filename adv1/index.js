@@ -1,4 +1,4 @@
-function gettext(){
+
     var a = ("13,20");
     let number = a.replace(/\,/g," ");
     let newNumber = number.split(" ");
@@ -10,5 +10,3 @@ function gettext(){
         console.log(sum)
     }
     total();
-}
-gettext();
