@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <script type="text/javascript">
-        function gettext(){
-            a = document.getElementById("txtName").value;
-            let number = a.replace(/\,/g," ");
-            let newNumber = number.split(" ")
-            console.log(newNumber);
-            total();
-            const total = () => {
-                var sum=0;
-                for (var i = 0;i<newNumber.length;i++){
-                    sum += Number(newNumber[i]);
-                }
-                document.getElementById("sum").innerHTML = sum;
-                return sum;
-            }
-        }
-</script>
-    </head>
-<body>
-<input type="multi-text" id="txtName" />
-<button onclick="gettext()">Click Here</button>
-<p id="sum"></p>
 
+<head>
+    <script type="text/javascript">
+        function gettext() {
+            var num = (prompt("Nhap chuoi so"));
+            console.log(num);
+            add(num);
+        }
+        function add(num) {
+            let number = num.replace(/\,/g, " ");
+            let newNumber = number.split(" ");
+            var sum = 0;
+            for (var i = 0; i < newNumber.length; i++) {
+                sum += Number(newNumber[i]);
+            }
+            document.write(sum)
+        }
+        gettext();
+    </script>
+</head>
+
+<body>
 </body>
+
 </html>
