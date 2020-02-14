@@ -4,8 +4,11 @@ function gettext() {
     add(num);
 }
 function add(num) {
-    let number = num.replace(/\,/g, " ");
+    let number = num.replace(/,/g, " ");
     let newNumber = number.split(" ");
+
+    console.log(num.split(",")); //[1,2,3,4,5]
+
     var sum = 0;
     for (var i = 0; i < newNumber.length; i++) {
         sum += Number(newNumber[i]);
@@ -13,3 +16,6 @@ function add(num) {
     console.log(sum)
 }
 gettext();
+
+
+//regex

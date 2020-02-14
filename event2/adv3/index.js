@@ -1,5 +1,5 @@
 function gettext() {
-    var num = ("//\n1,2,3,4");
+    var num = "//t\n1t2t3t4";
     var a = num.slice(2, 3);
     console.log(typeof(a));
     console.log("\n");
@@ -11,6 +11,7 @@ function add(num,a) {
     let b = num.slice('3');
     let number = b.replace(new RegExp(result, 'g'), " ");
     if (a=="\n"){
+        console.log('23');
        number = b.replace(/\,|\n/g, " ");
     }
     let newNumber = number.split(" ");
@@ -21,3 +22,5 @@ function add(num,a) {
     console.log(sum)
 }
 gettext();
+
+add('1,2')
