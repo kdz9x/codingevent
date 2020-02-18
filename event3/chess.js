@@ -17,4 +17,4 @@ function chess(x,y){
   console.log('Số lựa chọn trong nước đi tiếp theo là: ',array.length);
   console.log('Các nước đó là: ',array);
 }
-chess(1,8)
+chess(1,7)
